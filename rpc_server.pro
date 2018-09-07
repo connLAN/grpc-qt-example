@@ -6,7 +6,7 @@ CONFIG -= app_bundle
 
 DEFINES += QT_DEPRECATED_WARNINGS
 
-LIBS +=  -lgrpc++ -lgrpc -lgpr -lcrypto -lssl -lz -lcares -lprotobuf -lprotoc 
+LIBS += /usr/lib/libgrpc++.a /usr/lib/libgrpc.a  -lgpr -lcrypto -lssl -lz -lcares -lprotobuf -lprotoc 
 
 SRCDIR = "rpc_server"
 TARGET= rpcServer
